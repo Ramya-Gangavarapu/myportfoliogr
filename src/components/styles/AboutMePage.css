@@ -26,9 +26,9 @@
   background-color: #000000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  position: relative; /* Required for the glow animation */
-  overflow: hidden; /* Ensures glow extends to full border */
-  animation: glow 2s infinite ease-in-out; /* Adjusted animation */
+  position: relative; 
+  overflow: hidden; 
+  animation: glow 2s infinite ease-in-out; 
 }
 
 @keyframes glow {
@@ -47,8 +47,8 @@ h1 {
   font-size: 2rem;
   margin-bottom: 20px;
   animation: bend 6s infinite ease-in-out;
-  position: relative; /* Position relative for glow effect */
-  z-index: 1; /* Ensures text displays above glow */
+  position: relative; 
+  z-index: 1; 
 }
 
 @keyframes bend {
@@ -92,13 +92,13 @@ h1 {
 
 .card {
   background-color: rgb(255, 255, 255);
-  width: calc(30% - 70px); /* Two cards per row with space */
+  width: calc(30% - 70px); 
   height: 250px;
   perspective: 1000px;
   position: relative;
   font-family: cursive;
   border-radius: 30px;
-  transition: transform 0.3s ease-in-out; /* Grow and shrink animation */
+  transition: transform 0.3s ease-in-out; 
 }
 
 .card-front,
@@ -147,8 +147,8 @@ h1 {
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Card bounce effect */
-  animation: grow-shrink 0.6s ease-in-out; /* Grow and shrink animation */
+  transform: translateY(-5px); 
+  animation: grow-shrink 0.6s ease-in-out; 
 }
 
 @keyframes grow-shrink {
@@ -170,7 +170,7 @@ h1 {
   }
 
   .card {
-    width: 100%; /* Full width for small screens */
+    width: 100%; 
     height: auto;
   }
 

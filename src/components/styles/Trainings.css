@@ -1,11 +1,11 @@
 .trainings-container {
-  background-color: #000000; /* Dark background */
-  color: #ffffff; /* Light text color for contrast */
+  background-color: #000000; 
+  color: #ffffff; 
   padding: 40px 20px;
   font-family: cursive;
   text-align: center;
-  position: relative; /* Position relative to align content below the navbar */
-  border-radius: 15px; /* Rounded corners */
+  position: relative; 
+  border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   animation: glow 2s infinite ease-in-out;
 }
@@ -26,9 +26,9 @@
 }
 
 .trainings-details {
-  background-color: #1a1a1a; /* Darker background for training details */
-  border: 2px solid #333333; /* Subtle border for distinction */
-  border-radius: 10px; /* Rounded corners */
+  background-color: #1a1a1a; 
+  border: 2px solid #333333; 
+  border-radius: 10px; 
   padding: 20px;
   margin: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
@@ -41,13 +41,13 @@
   font-size: 1.8rem;
   color: #00ffff;
   margin-bottom: 10px;
-  animation: glow 1.5s infinite alternate ease-in-out; /* Glow effect */
+  animation: glow 1.5s infinite alternate ease-in-out; 
 }
 
 .institute-title, .location, .duration, .description, .skills {
   font-family: cursive;
   font-size: 1.1rem;
-  color: #ffffff; /* Text color for content */
+  color: #ffffff; 
   margin-bottom: 10px;
 }
 
@@ -77,7 +77,7 @@
 }
 
 .action-button {
-  background-color: #d4b3db; /* Light background */
+  background-color: #d4b3db; 
   color: #000000;
   border: none;
   border-radius: 20px;

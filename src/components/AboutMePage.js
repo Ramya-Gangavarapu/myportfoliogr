@@ -8,7 +8,7 @@ const AboutMePage = () => {
     cardsRef.current.forEach((card, index) => {
       setTimeout(() => {
         card.classList.add("grow-shrink");
-      }, index * 100); // Adding a delay for staggered animation
+      }, index * 100); 
     });
   }, []);
 

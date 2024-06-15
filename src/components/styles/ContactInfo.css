@@ -21,7 +21,7 @@
   margin: 20px 0;
   padding: 15px;
   background-color: #2a2a2a;
-  border: 2px solid #333333; /* Default border color */
+  border: 2px solid #333333; 
   border-radius: 10px;
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -41,11 +41,11 @@
 
 .contact-card:hover {
   background-color: #1a1a1a;
-  border-color: #a1ff26; /* Glowing border color on hover */
-}
+  border-color: #a1ff26; 
 
 @media (max-width: 768px) {
   .contact-card {
     padding: 10px;
   }
+}
 }

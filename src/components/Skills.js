@@ -10,12 +10,12 @@ const Skills = () => {
       const buttons = document.querySelectorAll('.skill-box button');
       let delay = 0;
       buttons.forEach((button, index) => {
-        button.style.animationDelay = `${delay + index * 0.2}s`; // Add stagger delay
-        delay += 0.1; // Increment delay for next button
+        button.style.animationDelay = `${delay + index * 0.2}s`; 
+        delay += 0.1; 
       });
-      setAnimationCompleted(true); // Set animation status
+      setAnimationCompleted(true); 
     }
-  }, [animationCompleted]); // Ensure useEffect runs only once on component mount
+  }, [animationCompleted]); 
 
   return (
     <div className="skills-container">

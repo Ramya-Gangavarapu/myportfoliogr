@@ -1,0 +1,94 @@
+/* src/components/styles/Navbar.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 0 20px;
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed; /* Fixed position */
+  top: 0; /* Sticks to the top */
+  left: 0;
+  z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+.navbar h1 {
+  color: white;
+  margin: 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: none; /* Hide the menu by default on small screens */
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+}
+
+.navbar ul.show {
+  display: flex;
+}
+
+.navbar li {
+  padding: 15px 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #ff6347;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the menu items */
+    position: static;
+    background-color: transparent;
+    height: auto;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hamburger {
+    display: flex;
+  }
+}

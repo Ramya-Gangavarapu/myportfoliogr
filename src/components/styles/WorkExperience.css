@@ -1,0 +1,97 @@
+.work-experience-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000000;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.work-experience-container h1 {
+  background-color: cyan;
+  color: rgba(0, 4, 50, 0.928);
+  font-family: cursive;
+  font-size: 45px;
+  margin-top: 60px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.work-experience-grid {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #000000;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: glow 2s infinite ease-in-out;
+  color: #ffffff;
+  text-align: center;
+}
+
+.work-experience-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.work-experience-image img:hover {
+  transform: translateY(-5px);
+  animation: grow-shrink 0.6s ease-in-out;
+}
+
+.work-experience-details {
+  margin-top: 20px;
+}
+
+.work-experience-details h2, .work-experience-details h3 {
+  color: rgb(255, 176, 30);
+  font-family: 'Cursive', sans-serif;
+}
+
+.work-experience-details p, .work-experience-details ul {
+  margin: 10px 0;
+  text-align: left;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 50px 15px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes grow-shrink {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 600px) {
+  .work-experience-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .work-experience-grid {
+    padding: 20px;
+  }
+
+  .work-experience-image img {
+    max-width: 100%;
+  }
+}

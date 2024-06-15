@@ -1,0 +1,181 @@
+
+.about-me-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000000;
+  padding: 20px;
+}
+
+.about-me-container h1 {
+  background-color: cyan;
+  color: rgba(0, 4, 50, 0.928);
+  font-family: cursive;
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+
+.about-me-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: rgb(32, 0, 55);
+  background-color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative; /* Required for the glow animation */
+  overflow: hidden; /* Ensures glow extends to full border */
+  animation: glow 2s infinite ease-in-out; /* Adjusted animation */
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 50px 15px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.2);
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: bend 6s infinite ease-in-out;
+  position: relative; /* Position relative for glow effect */
+  z-index: 1; /* Ensures text displays above glow */
+}
+
+@keyframes bend {
+  0%, 100% {
+    transform: skewX(0deg);
+  }
+  50% {
+    transform: skewX(-10deg);
+  }
+  100% {
+    transform: skewX(10deg);
+  }
+}
+
+.animated-text-container {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  color: #ffffff;
+}
+
+.animated-word {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  display: inline-block;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  width: calc(30% - 70px); /* Two cards per row with space */
+  height: 250px;
+  perspective: 1000px;
+  position: relative;
+  font-family: cursive;
+  border-radius: 30px;
+  transition: transform 0.3s ease-in-out; /* Grow and shrink animation */
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 45px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.6s;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-front {
+  background-color: #1e1d1e;
+  color: darkblue;
+}
+
+.card-back {
+  background-color: rgba(185, 185, 185, 0.9);
+  transform: rotateY(180deg);
+  color: darkblue;
+}
+
+.card:hover .card-front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+  transform: rotateY(360deg);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Card bounce effect */
+  animation: grow-shrink 0.6s ease-in-out; /* Grow and shrink animation */
+}
+
+@keyframes grow-shrink {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .animated-text-container {
+    font-size: 1rem;
+  }
+
+  .card {
+    width: 100%; /* Full width for small screens */
+    height: auto;
+  }
+
+  .card-front, .card-back {
+    padding: 10px;
+  }
+}
+

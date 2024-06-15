@@ -1,0 +1,145 @@
+.trainings-container {
+  background-color: #000000; /* Dark background */
+  color: #ffffff; /* Light text color for contrast */
+  padding: 40px 20px;
+  font-family: cursive;
+  text-align: center;
+  position: relative; /* Position relative to align content below the navbar */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  animation: glow 2s infinite ease-in-out;
+}
+
+.trainings-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  background-color: #00ffff;
+  color: rgb(32, 0, 55);
+}
+
+.trainings-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.trainings-details {
+  background-color: #1a1a1a; /* Darker background for training details */
+  border: 2px solid #333333; /* Subtle border for distinction */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  max-width: 600px;
+}
+
+.role-title {
+  font-family: cursive;
+  font-size: 1.8rem;
+  color: #00ffff;
+  margin-bottom: 10px;
+  animation: glow 1.5s infinite alternate ease-in-out; /* Glow effect */
+}
+
+.institute-title, .location, .duration, .description, .skills {
+  font-family: cursive;
+  font-size: 1.1rem;
+  color: #ffffff; /* Text color for content */
+  margin-bottom: 10px;
+}
+
+.trainings-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.training-img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.personal-experience {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.trainings-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.action-button {
+  background-color: #d4b3db; /* Light background */
+  color: #000000;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-5px);
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 50px 15px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media (max-width: 1024px) {
+  .trainings-grid {
+    flex-direction: column;
+  }
+
+  .trainings-details {
+    padding: 15px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .trainings-details {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .action-button {
+    padding: 8px 16px;
+    margin: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trainings-details {
+    padding: 8px;
+    margin: 3px;
+  }
+
+  .action-button {
+    padding: 6px 12px;
+    margin: 2px;
+  }
+}
+
+b {
+  color: yellow;
+}

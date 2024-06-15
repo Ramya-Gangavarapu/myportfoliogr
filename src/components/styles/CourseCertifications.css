@@ -1,0 +1,78 @@
+.course-certifications-container {
+  background-color: #000000; 
+  color: #ffffff; 
+  padding: 40px 20px;
+  font-family: cursive;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  animation: glow 2s infinite ease-in-out;
+}
+.course-certifications-container h1 {
+  background-color: #00ffff;
+  color:  rgb(32, 0, 55);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 35px;
+}
+.carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.certificate-card {
+  background-color: #1a1a1a; 
+  border: 2px solid #333333; 
+  border-radius: 20px; 
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.certificate-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.certificate-card h3 {
+  font-family: cursive;
+  font-size: 1.8rem;
+  color: #00ffff;
+  margin-bottom: 10px;
+  animation: glow 1.5s infinite alternate ease-in-out; 
+}
+
+.certificate-card p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 50px 15px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.2);
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .left-carousel, .right-carousel {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-carousel, .right-carousel {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
